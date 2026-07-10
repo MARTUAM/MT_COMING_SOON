@@ -37,7 +37,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero__overlay" />
       <div className="hero__folder">
-        <Folder color="#cccbce" size={isMobile ? 1.4 : 2.3} items={folderItems} />
+        <Folder color="#cccbce" size={isMobile ? 1.4 : 2.6} items={folderItems} />
       </div>
       <TextType
         className="hero__caption"
