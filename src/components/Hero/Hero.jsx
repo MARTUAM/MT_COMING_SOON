@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Folder from '../Folder/Folder';
 import TextType from '../TextType/TextType';
-import heroBg from '../../assets/hero-bg.jpg';
 import mtWordmark from '../../assets/svg/mtfinal.svg';
 import mtBadge from '../../assets/svg/mt_favicon.svg';
 import perrito from '../../assets/svg/perrito_elegante.svg';
@@ -35,10 +34,10 @@ const Hero = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className="hero" style={{ backgroundImage: `url(${heroBg})` }}>
+    <section className="hero">
       <div className="hero__overlay" />
       <div className="hero__folder">
-        <Folder color="#cccbce" size={isMobile ? 1.4 : 2.6} items={folderItems} />
+        <Folder color="#cccbce" size={isMobile ? 1.4 : 2.3} items={folderItems} />
       </div>
       <TextType
         className="hero__caption"
